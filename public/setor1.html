@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Setor 1 | Irrigação Inteligente</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/materialize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="bg-4 pb-4">
+        <div class="white barra-sup no-padding">
+            <div class="row w-100 m-0 p-0 center-align">
+                <img class="logo-home" src="image/logo-projeto-irrigacao.png">
+            </div>
+        </div>
+        <div class="container white painel">
+            <div class="row">
+                <!--dropdown-->
+                <div class="input-field col s12">
+                    <select id="periodoSetor1" onchange="verificaPeriodo('diasSetor1Div', 'periodoSetor1')">
+                        <option value="" disabled selected>Selecione uma opção</option>
+                        <option value="1">Diário (todos os dias)</option>
+                        <option value="2">Personalizar (selecione os dias desejados abaixo)</option>
+                    </select>
+                    <label>Período de Irrigação</label>
+                </div>
+            </div>
+            <div class="row d-block" id="diasSetor1Div">
+                <!--dropdown-->
+                <div class="input-field col s12">
+                    <select multiple id="diasSetor1">
+                        <option value=""  disabled>Selecione os dias que deseja irrigar</option>
+                        <option value="0">Domingo</option>
+                        <option value="1">Segunda-feira</option>
+                        <option value="2">Terça-feira</option>
+                        <option value="3">Quarta-feira</option>
+                        <option value="4">Quinta-feira</option>
+                        <option value="5">Sexta-feira</option>
+                        <option value="6">Sábado</option>
+                    </select>
+                    <label>Dias semanais</label>
+                </div>
+            </div>
+            <div class="row">
+                <!--dropdown-->
+                <div class="input-field col s12">
+                    <select multiple id="horariosSetor1">
+                        <option value="" disabled>Selecione os horários que deseja irrigar</option>
+                        <option value="0:0">00:00</option>
+                        <option value="0:30">00:30</option>
+                        <option value="1:0">01:00</option>
+                        <option value="1:30">01:30</option>
+                        <option value="2:0">02:00</option>
+                        <option value="2:30">02:30</option>
+                        <option value="3:0">03:00</option>
+                        <option value="3:30">03:30</option>
+                        <option value="4:0">04:00</option>
+                        <option value="4:30">04:30</option>
+                        <option value="5:0">05:00</option>
+                        <option value="5:30">05:30</option>
+                        <option value="6:0">06:00</option>
+                        <option value="6:30">06:30</option>
+                        <option value="7:0">07:00</option>
+                        <option value="7:30">07:30</option>
+                        <option value="8:0">08:00</option>
+                        <option value="8:30">08:30</option>
+                        <option value="9:0">09:00</option>
+                        <option value="9:30">09:30</option>
+                        <option value="10:0">10:00</option>
+                        <option value="10:30">10:30</option>
+                        <option value="11:0">11:00</option>
+                        <option value="11:30">11:30</option>
+                        <option value="12:0">12:00</option>
+                        <option value="12:30">12:30</option>
+                        <option value="13:0">13:00</option>
+                        <option value="13:30">13:30</option>
+                        <option value="14:0">14:00</option>
+                        <option value="14:30">14:30</option>
+                        <option value="15:0">15:00</option>
+                        <option value="15:30">15:30</option>
+                        <option value="16:0">16:00</option>
+                        <option value="16:30">16:30</option>
+                        <option value="17:0">17:00</option>
+                        <option value="17:30">17:30</option>
+                        <option value="18:0">18:00</option>
+                        <option value="18:30">18:30</option>
+                        <option value="19:0">19:00</option>
+                        <option value="19:30">19:30</option>
+                        <option value="20:0">20:00</option>
+                        <option value="20:30">20:30</option>
+                        <option value="21:0">21:00</option>
+                        <option value="21:30">21:30</option>
+                        <option value="22:0">22:00</option>
+                        <option value="22:30">22:30</option>
+                        <option value="23:0">23:00</option>
+                        <option value="23:30">23:30</option>
+                    </select>
+                    <label>Horários de Irrigação</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <input id="duracaoSetor1" type="number" class="validate">
+                    <label for="duracaoSetor1">Duração em Minutos</label>
+                </div>
+            </div>
+            <div class="row m-0">
+                <div class="input-field col s12 m-0">
+                    <button class="waves-effect waves-light btn" onclick="salvaDadosSetor1()"><i class="material-icons left">check</i>Salvar</button>
+                    <a href="home.html" class="waves-effect waves-light btn"><i class="material-icons left">settings_backup_restore</i>Voltar para Home</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.10.0/firebase.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-analytics.js"></script>
+
+    <script rel="script" src="js/materialize.js"></script>
+    <script rel="script" src="js/script.js"></script>
+</body>
+</html>

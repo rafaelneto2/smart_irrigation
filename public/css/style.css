@@ -1,0 +1,141 @@
+.color-1{
+    color: #147333;
+}
+.color-2{
+    color: #69BF41;
+}
+.color-3{
+    color: #7ABF6F;
+}
+.color-4{
+    color: #F2F2F2;
+}
+.color-5{
+    color: #012623;
+}
+.tabs .tab a:hover, .tabs .tab a.active, .tabs .tab a {
+    color: #147333;
+}
+.tabs .tab a:focus, .tabs .tab a:focus.active{
+    background-color: rgba(20, 155, 51, 0.2);
+}
+.tabs .indicator {
+    position: absolute;
+    background-color: #147333;
+}
+.bg-1{
+    background: #147333;
+}
+.bg-2{
+    background: #69BF41;
+}
+.bg-3{
+    background: #7ABF6F;
+}
+.bg-4{
+    background: #F2F2F2;
+}
+.bg-5{
+    background: #012623;
+}
+
+.bg-white{
+    background: #fff;
+}
+
+.bg-img{
+    background-image: url("../image/teste.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    height: 100vh;
+}
+
+.login{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+.barra-sup{
+    height: 70px;
+    box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.16);
+}
+
+.logo-sistema{
+    background-image: url("../image/logo-projeto-irrigacao.png");
+    height: 53px;
+    background-size: contain;
+    background-position: left;
+    background-repeat: no-repeat;
+}
+
+.custom-select:focus{
+    border-color: #69BF41;
+    outline: 0;
+    box-shadow:none;
+}
+
+.painel{
+    margin-top: 4rem;
+    padding: 5rem;
+    box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.16);
+}
+
+.pb-4{
+    padding-bottom: 4rem;
+}
+
+.m-0{
+    margin: 0!important;
+}
+
+.img-login{
+    margin: 2rem;
+    width: 25%;
+}
+
+.w-75{
+    width: 66% !important;
+}
+
+.statistic {
+    font-size: 8em;
+    margin-top: 15px !important;
+}
+
+.pt10px{
+    padding-top: 10px;
+}
+
+.card {
+    min-height: 250px;
+    box-shadow: none!important;
+}
+
+.activator {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 600px){
+    .statistic {
+        font-size: 5em;
+    }
+}
+
+.d-block{
+    display: block;
+}
+
+.d-none{
+    display: none;
+}
+
+.logo-home{
+    height: 50px;
+    margin-top: 10px;
+}
